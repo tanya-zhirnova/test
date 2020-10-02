@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    background-color: rgb(44, 44, 44);
+}
+img {
+    width: 300px;
+    display: block;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.gallery {
+    position: relative;
+    width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.gallery .box {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background-color:  rgb(44, 44, 44);
+    box-sizing: border-box;
+    display: inline-block;
+    transition: 1s;
+}
+.gallery .box:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
